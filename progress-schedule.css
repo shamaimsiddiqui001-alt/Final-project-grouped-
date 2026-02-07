@@ -4,8 +4,9 @@
 }
 
 :root {
-    --primary-theme: #143c7a;
+    --primary-theme: #1e293b;
     --text-theme: white;
+    --button-theme: #38bdf8;
 }
 
 
@@ -24,7 +25,7 @@ body {
 }
 
 header {
-    background-color: #1e293b;
+    background-color: var(--primary-theme);
     padding: 1rem 5%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
@@ -36,7 +37,7 @@ header {
 }
 
 .logo span {
-    color: #38bdf8;
+    color: var(--button-theme);
     /* Light blue accent */
 }
 
@@ -59,7 +60,7 @@ header {
 .nav-links a:hover,
 .nav-links a.active {
     color: #fff;
-    border-bottom: 2px solid #38bdf8;
+    border-bottom: 2px solid var(--button-theme);
 }
 
 header ul {
@@ -120,9 +121,9 @@ header li {
     position: relative;
 }
 
-.navbar a:hover {
+/*.navbar a:hover {
     text-decoration: underline;
-}
+}*/
 
 .navbar a::after {
     content: "";
@@ -142,6 +143,7 @@ header li {
 
 /* CONTAINER */
 .container {
+    color: var(--text-theme);
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
@@ -149,9 +151,10 @@ header li {
     border-radius: 12px;
     padding: 25px;
     margin-bottom: 25px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 
 /* CARDS */
 .card {
@@ -167,17 +170,23 @@ div a {
     color: var(--primary-theme);
 }
 
+div div {
+    color: var(--primary-theme);
+}
+
 /* HEADINGS */
 h1,
 h2,
 h3 {
-    color: var(--primary-theme);
-    background-color: var(--text-theme);
+    color: var(--text-theme);
+    background-color: var(--primary-theme);
 }
 
+
+
 /* BUTTONS */
-button {
-    background: var(--primary-theme);
+.button {
+    background: var(--button-theme);
     color: var(--text-theme);
     border: none;
     padding: 10px 18px;
@@ -187,7 +196,7 @@ button {
 }
 
 button:hover {
-    background: #0790cf69;
+    background: #7dd3fc;
     color: var(--primary-theme);
 }
 
@@ -205,7 +214,7 @@ select {
 section ul {
     list-style: none;
     padding: 0;
-    color: #222;
+    color: var(--text-theme);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -231,7 +240,7 @@ footer {
     text-align: center;
     padding: 15px;
     background: #222;
-    color: white;
+    color: var(--text-theme);
     margin-top: 40px;
 }
 
@@ -263,7 +272,7 @@ footer {
 
 /* highlight on hover */
 .motivation-card ul li:hover {
-    color: #4f46e5;
+    color: #7dd3fc;
     cursor: default;
 }
 
@@ -304,5 +313,5 @@ footer {
 }
 
 select:hover {
-    border-color: #4f46e5;
+    border-color: #7dd3fc;
 }
