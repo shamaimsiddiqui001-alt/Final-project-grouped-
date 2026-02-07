@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Plan<span>Nex</span></div>
+            <ul class="nav-links">
+                <li><a href="form.html">Register</a></li>
+                <li><a href="todo.html" class="active">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="todo-box">
+            <h2>My Study Tasks</h2>
+            <div class="todo-input">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button onclick="addTask()" class="add-btn">+</button>
+            </div>
+            <ul id="taskList">
+                </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
