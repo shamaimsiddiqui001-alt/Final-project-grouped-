@@ -35,3 +35,4 @@ document.getElementById('taskInput')?.addEventListener('keypress', function (e) 
         addTask();
     }
 });
+link rel="index.html" type="text/html" />
