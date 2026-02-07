@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal - To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">Plan<span>Nex</span></div>
             <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="form.html">Register</a></li>
+                <li><a href="tips.html" class="active">Tips</a></li>
                 <li><a href="todo.html" class="active">To-Do List</a></li>
+                <li><a href="motivation.html" class="active">Progress History</a></li>
+                <li><a href="timetable.html" class="active">Schedule</a></li>
             </ul>
         </nav>
     </header>
@@ -25,10 +31,11 @@
                 <button onclick="addTask()" class="add-btn">+</button>
             </div>
             <ul id="taskList">
-                </ul>
+            </ul>
         </div>
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>

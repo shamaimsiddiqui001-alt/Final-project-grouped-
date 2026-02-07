@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Life Helper - Time Table</title>
+  <link rel="stylesheet" href="progress-schedule.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+   <header>
+        <nav class="navbar">
+            <div class="logo">Plan<span>Nex</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="form.html" class="active">Register</a></li>
+                <li><a href="tips.html" class="active">Tips</a></li>
+                <li><a href="todo.html"class="active">To-Do List</a></li>
+                <li><a href="motivation.html"class="active">Progress History</a></li>
+                <li><a href="schedule.html"class="active">Schedule</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+ 
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+
+    <!-- TIME TABLE MAKER -->
+    <section class="maker">
+      <h2>📅 TIME TABLE MAKER</h2>
+      <p class="tagline">"Plan your day, manage your time"</p>
+
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" id="subject" placeholder="Enter subject">
+      </div>
+
+      <div class="form-group">
+        <label>Day</label>
+        <select id="day">
+          <option>Mon</option>
+          <option>Tue</option>
+          <option>Wed</option>
+          <option>Thu</option>
+          <option>Fri</option>
+          <option>Sat</option>
+
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Time</label>
+        <input type="text" id="time" placeholder="9:00 - 10:00">
+      </div>
+
+      <button onclick="addSchedule()">Add to Time Table</button>
+    </section>
+
+    <!-- WEEKLY SCHEDULE -->
+    <section class="schedule">
+      <h3>📘 Weekly Schedule</h3>
+      <ul id="scheduleList" class="schedule">
+        <li>Mon | Math | 9:00 - 10:00</li>
+        <li>Tue | English | 10:00 - 11:00</li>
+        <li>Wed | Physics | 9:00 - 10:00</li>
+        <li>Thu | CS | 11:00 - 12:00</li>
+        <li>Fri | Revision | 8:00 - 9:00</li>
+      </ul>
+
+      <button class="clear" onclick="clearSchedule()">Clear Schedule</button>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    About | Contact | Help
+  </footer>
+
+  <script src="schedule.js"></script>
+</body>
+</html>

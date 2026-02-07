@@ -1,203 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Study Type</title>
-<a href="index.html">HOME</a>
-<style>
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#f1f2f2;
-     /* Background Image */
-        background-image: url("/assets/background\ img.webp");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    
+    <meta charset="UTF-8">
+    <title>Study Type</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f2f2;
+            /* Background Image */
+            background-image: url("/assets/background\ img.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-nav{
-    background:#1e293B;
-    color:rgb(249, 248, 248);
-    padding:12px 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
+        nav {
+            background: #1e293B;
+            color: rgb(249, 248, 248);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:20px;
-    margin:0;
-    padding:0;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
 
 
-.hero{
-    background:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f") no-repeat center/cover;
-    height:350px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:rgb(245, 242, 242);
-    text-align:center;
-}
+        .hero {
+            background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f") no-repeat center/cover;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(245, 242, 242);
+            text-align: center;
+        }
 
-.hero h1{
-    font-size:36px;
-}
+        .hero h1 {
+            font-size: 36px;
+        }
 
-.hero button{
-    padding:12px 25px;
-    border:none;
-    background:#1e293B;
-    color:rgb(249, 249, 249);
-    font-size:16px;
-    border-radius:5px;
-}
+        .hero button {
+            padding: 12px 25px;
+            border: none;
+            background: #1e293B;
+            color: rgb(249, 249, 249);
+            font-size: 16px;
+            border-radius: 5px;
+        }
 
-/* SECTION */
-.section{
-    background:rgb(252, 251, 251);
-    width:70%;
-    margin:auto;
-    padding:30px;
-}
+        /* SECTION */
+        .section {
+            background: rgb(252, 251, 251);
+            width: 70%;
+            margin: auto;
+            padding: 30px;
+        }
 
-.quote{
-    background:#899ed1;
-    padding:20px;
-    text-align:center;
-    font-style:italic;
-    border-radius:6px;
-}
+        .quote {
+            background: #899ed1;
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+            border-radius: 6px;
+        }
 
-/* COUNTDOWN */
-.countdown{
-    display:flex;
-    gap:15px;
-    margin-top:20px;
-}
+        /* COUNTDOWN */
+        .countdown {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
 
-.box{
-    padding:15px;
-    border-radius:6px;
-    color:rgb(250, 249, 249);
-    text-align:center;
-    width:120px;
-}
+        .box {
+            padding: 15px;
+            border-radius: 6px;
+            color: rgb(250, 249, 249);
+            text-align: center;
+            width: 120px;
+        }
 
-.days{background:#436fde;}
-.hours{background:#383993;}
-.minutes{background:#3f2dc5;}
-.seconds{background:#4f1cea;}
+        .days {
+            background: #436fde;
+        }
 
-/* TABLE */
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
-}
+        .hours {
+            background: #383993;
+        }
 
-th{
-    background: #1e293B;;
-    color:rgb(246, 243, 243);
-    padding:10px;
-}
+        .minutes {
+            background: #3f2dc5;
+        }
 
-td{
-    padding:10px;
-    border-bottom:1px solid #ccc;
-}
-</style>
+        .seconds {
+            background: #4f1cea;
+        }
+
+        /* TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            background: #1e293B;
+            ;
+            color: rgb(246, 243, 243);
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
 </head>
 
 <body>
 
-<nav>
-<div>STUDYTYPE</div>
-<ul>
-<li>Demo</li>
-<li>Subject</li>
-<li>Score</li>
-<li>Contact</li>
-</ul>
-</nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Plan<span>Nex</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="form.html" class="active">Register</a></li>
+                <li><a href="tips.html" class="active">Tips</a></li>
+                <li><a href="todo.html" class="active">To-Do List</a></li>
+                <li><a href="motivation.html" class="active">Progress History</a></li>
+                <li><a href="timetable.html" class="active">Schedule</a></li>
 
-<div class="hero">
-<div>
-<h1>Turn your dreams into reality</h1>
-<p>On PlannEx you'll find all the tools and resources you need to succeed.</p>
+            </ul>
+        </nav>
+    </header>
 
-</div>
-</div>
+    <nav>
+        <div>STUDYTYPE</div>
+        <ul>
+            <li>Demo</li>
+            <li>Subject</li>
+            <li>Score</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
 
-<div class="section">
-<h2>INTRODUCTION</h2>
-<p>
-PlannerEx is a smart study guide tool designed to help students organize their learning, manage time efficiently, and stay motivated. It offers features like personalized study plans, timetable creation, and progress tracking to make studying easier and more effective
-</p>
+    <div class="hero">
+        <div>
+            <h1>Turn your dreams into reality</h1>
+            <p>On PlannEx you'll find all the tools and resources you need to succeed.</p>
 
-<div class="quote">
-“Success is not final; failure is not fatal: it is the courage to continue that counts.”  
-<br>— Winston Churchill
-</div>
+        </div>
+    </div>
 
-<h3>NEXT BIG EXAM COUNTDOWN</h3>
-<div class="countdown">
-<div class="box days">4 Days</div>
-<div class="box hours">12 Hours</div>
-<div class="box minutes">30 Minutes</div>
-<div class="box seconds">5 Seconds</div>
-</div>
-<p>10 FEB 2026</p>
+    <div class="section">
+        <h2>INTRODUCTION</h2>
+        <p>
+            PlanNex is a smart study guide tool designed to help students organize their learning, manage time
+            efficiently, and stay motivated. It offers features like personalized study plans, timetable creation, and
+            progress tracking to make studying easier and more effective
+        </p>
 
-<h3>UPCOMING EXAMS TIMETABLE</h3>
-<table>
-<tr>
-<th>Exam</th>
-<th>Duration</th>
-<th>topic to cover</th>
-<th>date</th>
-</tr>
+        <div class="quote">
+            “Success is not final; failure is not fatal: it is the courage to continue that counts.”
+            <br>— Winston Churchill
+        </div>
 
-<tr>
-<td>maths</td>
-<td>34 Days</td>
-<td>5 chapters</td>
-<td>20 FEB 2026</td>
-</tr>
+        <h3>NEXT BIG EXAM COUNTDOWN</h3>
+        <div class="countdown">
+            <div class="box days">4 Days</div>
+            <div class="box hours">12 Hours</div>
+            <div class="box minutes">30 Minutes</div>
+            <div class="box seconds">5 Seconds</div>
+        </div>
+        <p>10 FEB 2026</p>
 
-<tr>
-<td>physics</td>
-<td>78 Days</td>
-<td>10 chapters</td>
-<td>25 FEB 2025</td>
-</tr>
+        <h3>UPCOMING EXAMS TIMETABLE</h3>
+        <table>
+            <tr>
+                <th>Exam</th>
+                <th>Duration</th>
+                <th>topic to cover</th>
+                <th>date</th>
+            </tr>
 
-<tr>
-<td>chemistry</td>
-<td>30 Days</td>
-<td>7 chapters</td>
-<td>27 FEB 2026</td>
-</tr>
-<tr>
-<td>biology</td>
-<td>78 Days</td>
-<td>10 chapters</td>
-<td>1 MARCH 2025</td>
-</tr>
-<tr>
-<td>computer science</td>
-<td>78 Days</td>
-<td>12 chapters</td>
-<td> 5 MARCH 2025</td>
-</tr>
+            <tr>
+                <td>maths</td>
+                <td>34 Days</td>
+                <td>5 chapters</td>
+                <td>20 FEB 2026</td>
+            </tr>
 
-</table>
-</div>
+            <tr>
+                <td>physics</td>
+                <td>78 Days</td>
+                <td>10 chapters</td>
+                <td>25 FEB 2025</td>
+            </tr>
+
+            <tr>
+                <td>chemistry</td>
+                <td>30 Days</td>
+                <td>7 chapters</td>
+                <td>27 FEB 2026</td>
+            </tr>
+            <tr>
+                <td>biology</td>
+                <td>78 Days</td>
+                <td>10 chapters</td>
+                <td>1 MARCH 2025</td>
+            </tr>
+            <tr>
+                <td>computer science</td>
+                <td>78 Days</td>
+                <td>12 chapters</td>
+                <td> 5 MARCH 2025</td>
+            </tr>
+
+        </table>
+    </div>
 
 </body>
+
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Motivation | MindBloom Hub</title>
+  <link rel="stylesheet" href="progress-schedule.css">
+
+</head>
+<body>
+<header>
+        <nav class="navbar">
+            <div class="logo">Plan<span>Nex</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="form.html" class="active">Register</a></li>
+                <li><a href="tips.html" class="active">Tips</a></li>
+                <li><a href="todo.html"class="active">To-Do List</a></li>
+                <li><a href="motivation.html"class="active">Progress History</a></li>
+                <li><a href="schedule.html"class="active">Schedule</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+<div class="container">
+
+  <!-- PAGE TITLE -->
+  <div class="card">
+    <h2>🌱 Stay Motivated</h2>
+    <p>Small steps every day lead to big results.</p>
+  </div>
+
+  <!-- DAILY QUOTE -->
+<div class="card motivation-card">
+  <h3>💬 Motivation for You</h3>
+
+  
+
+  <p id="quoteText">
+    Stay positive. Keep learning.
+  </p>
+
+  <!-- Mood selector -->
+  <label for="mood"><strong>How are you feeling today?</strong></label>
+  <select id="mood" onchange="saveMood()">
+    <option value="">Select mood</option>
+    <option value="happy">😊 Happy</option>
+    <option value="tired">😴 Tired</option>
+    <option value="stressed">😟 Stressed</option>
+    <option value="sad">😔 Sad</option>
+    <option value="motivated">🔥 Motivated</option>
+  </select>
+</div>
+
+<div class="card motivation-card">
+  <h3>📊 Mood History</h3>
+  <div id="moodGraph" class="mood-graph"></div>
+</div>
+
+  <!-- STUDY REMINDER -->
+  <div class="card motivation-card">
+    <h3>⏰ Study Reminder</h3>
+    <ul>
+      <li>✔ Start with your hardest subject</li>
+      <li>✔ Take short breaks</li>
+      <li>✔ Avoid distractions</li>
+    </ul>
+  </div>
+
+  <!-- SELF CARE -->
+  <div class="card motivation-card">
+    <h3>🧠 Self Care Tips</h3>
+    <ul>
+      <li>💧 Stay hydrated</li>
+      <li>😴 Get enough sleep</li>
+      <li>🚶 Take a short walk</li>
+    </ul>
+  </div>
+
+  <!-- GOAL REMINDER -->
+  <div class="card motivation-card">
+    <h3>🎯 Goal Reminder</h3>
+    <p>
+      Remember why you started. Your future self will thank you.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 MindBloom Hub | Stay Consistent
+</footer>
+<script src="motivation.js"></script>
+</body>
+</html>
