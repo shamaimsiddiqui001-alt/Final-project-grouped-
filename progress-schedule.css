@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -171,21 +173,24 @@ div a {
 }
 
 div div {
-    color: var(--primary-theme);
+    background-color: var(--primary-theme);
 }
 
 /* HEADINGS */
 h1,
-h2,
-h3 {
+h2 {
     color: var(--text-theme);
     background-color: var(--primary-theme);
 }
 
+h3 {
+    color: var(--primary-theme);
+    background-color: var(--text-theme);
+}
 
 
 /* BUTTONS */
-.button {
+button {
     background: var(--button-theme);
     color: var(--text-theme);
     border: none;
@@ -287,7 +292,7 @@ footer {
 
 .mood-bar {
     width: 20%;
-    background: #6366f1;
+    background: var(--button-theme);
     border-radius: 6px 6px 0 0;
     transition: 0.3s;
 }
