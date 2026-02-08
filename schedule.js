@@ -1,25 +1,4 @@
-/*function addSchedule() {
-  const subject = document.getElementById("subject").value;
-  const day = document.getElementById("day").value;
-  const time = document.getElementById("time").value;
 
-  if (subject === "" || time === "") {
-    alert("Please fill all fields");
-    return;
-  }
-
-  const li = document.createElement("li");
-  li.textContent = `${day} | ${subject} | ${time}`;
-
-  document.getElementById("scheduleList").appendChild(li);
-
-  document.getElementById("subject").value = "";
-  document.getElementById("time").value = "";
-}
-
-function clearSchedule() {
-  document.getElementById("scheduleList",schedule).innerHTML = "";
-}*/
 // Load saved schedule when page loads
 window.onload = function () {
   const savedSchedule = JSON.parse(localStorage.getItem("scheduleList")) || [];
