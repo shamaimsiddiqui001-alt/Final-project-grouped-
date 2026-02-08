@@ -74,7 +74,7 @@ header ul {
 }
 
 header li {
-    background: #334155;
+    background: var(--primary-theme);
     padding: 12px;
     margin-bottom: 10px;
     border-radius: 6px;
